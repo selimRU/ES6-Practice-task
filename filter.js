@@ -16,5 +16,10 @@ const instructors = [
         name: 'shobuj', age: 30, position: 'senior'
     }
 ]
-const seniors = instructors.filter(name => name.age > 26);
-console.log(seniors);
+let senior = [];
+instructors.filter(instructor => {
+    if (instructor.age > 26) {
+        senior.push(instructor.name)
+    }
+});
+console.log(senior);
